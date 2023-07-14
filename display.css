@@ -16,7 +16,7 @@ main{
     flex: 1;
     height: 100%;
     padding: 70px;
-    padding-top: 170px;
+    padding-top: 150px;
 
 }
 .forest-land{
@@ -33,7 +33,7 @@ margin: 0 auto;
     flex: 1;
     height: 100%;
     padding: 70px;
-    padding-top: 170px;
+    padding-top: 150px;
 
 }
 
@@ -43,7 +43,24 @@ margin: 0 auto;
     aspect-ratio: 1/1;
     height: 70%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
+.tree-card{
+    aspect-ratio: 1/1;
+    margin: auto;
+    justify-content: space-around;
+    width: 55%;
+    /* background-image: url(Images/fireOrbTreeCard.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
+    
+    /* vertical-align: middle; */
+}
+.tree-card-img{
+    width: 100%;
+}
+
 .timer-display{
     display: flex;
     flex: 1;
@@ -52,4 +69,16 @@ margin: 0 auto;
     align-items: center;
     color: rgb(143, 143, 143);
     gap: 20px;
+}
+.timer{
+    font-size: 50px;
+    margin-top: 10px;
+}
+.timer-display button{
+    border: none;
+    background-color: #db5088ff;
+    border-radius: 8px;
+    font-size: 25px;
+    color: white;
+    padding: 10px 30px;
 }
