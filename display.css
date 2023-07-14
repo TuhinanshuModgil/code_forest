@@ -1,0 +1,55 @@
+main{
+    max-width: 1400px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: rgb(235, 232, 232);
+}
+.display-section{
+    background-color: rgb(255, 255, 255);
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.forest-land-container{
+    flex: 1;
+    height: 100%;
+    padding: 70px;
+    padding-top: 170px;
+
+}
+.forest-land{
+    aspect-ratio: 1/1.15;
+    /* width: 80%; */
+    height: 100%;
+    background-image: url(Images/ForesrtLand.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+margin: 0 auto;
+
+}
+.timer-area{
+    flex: 1;
+    height: 100%;
+    padding: 70px;
+    padding-top: 170px;
+
+}
+
+.tree-display{
+    background: url(Images/treeDisplay.png);
+    background-size: cover;
+    aspect-ratio: 1/1;
+    height: 70%;
+    margin: 0 auto;
+}
+.timer-display{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    color: rgb(143, 143, 143);
+    gap: 20px;
+}
