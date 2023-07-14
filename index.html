@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="display.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -34,24 +35,37 @@
     </header>
 
     <main>
-        <div class="display-section">
-            <div class="forest-land-container">
-                <div class="forest-land">
-
-                </div>
+      <div class="display-section">
+        <div class="forest-land-container">
+          <div class="forest-land">
+            <div class="tree">
+              <img src="Images/fireOrbTree.png" alt="" />
             </div>
-            <div class="timer-area">
-                <div class="tree-display">
-                    <div class="tree-card">
-                        <img src="Images/fireOrbTreeCard.png" alt="" class="tree-card-img">
-                    </div>
-                </div>
-                <div class="timer-display">
-                    <div class="timer">120:00</div>
-                    <button>start</button>
-                </div>
+            <div class="tree1">
+              <img src="Images/fireOrbTree.png" alt="" />
             </div>
+          </div>
         </div>
+        <div class="timer-area">
+          <div class="tree-display">
+            <div class="tree-card">
+              <img
+                src="Images/fireOrbTreeCard.png"
+                alt=""
+                class="tree-card-img"
+              />
+            </div>
+          </div>
+          <div class="timer-display">
+            <div class="timer">
+              <div class="timer-add" onclick="timerAdd()">+</div>
+              <div class="timer-clock">60:00</div>
+              <div class="timer-subtract" onclick="timerSubtract()">-</div>
+            </div>
+            <button onclick="timerOn?stopTimer():startTimer()">start</button>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
