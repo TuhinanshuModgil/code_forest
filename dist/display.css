@@ -12,6 +12,9 @@ main{
     justify-content: space-between;
     align-items: center;
 }
+.loggedout-display{
+    color: black;
+}
 .forest-land-container{
     flex: 1;
     height: 100%;

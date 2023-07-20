@@ -1,4 +1,4 @@
-.signup-container{
+.signup-container, .login-container{
     width: 500px;
     background-color: rgb(250, 250, 250);
     margin: 0 auto;
@@ -9,14 +9,14 @@
     color: black;
     
 }
-.signup-container input{
+.signup-container input,.login-container input{
     width: 100%;
     background-color: rgb(238, 238, 238);
     border: none;
     padding: 10px;
     margin-top: 5px;
 }
-.signup-outer-container{
+.signup-outer-container, .login-outer-container{
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -25,7 +25,7 @@
     
     z-index: 2000;
 }
-#signup-done{
+#signup-done, #login-done{
     width: 100%;
     padding: 10px;
     background-color: #db5088ff;

@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="display.css" />
     <link rel="stylesheet" href="moodles.css" />
     <script src="../src/script.js" defer></script>
-    <script src="bundle.js" defer></script>
     <script src="../src/moodle.js" defer></script>
+    <script src="bundle.js" defer></script>
   </head>
   <body>
     <!-- --------------Nav Bar------------- -->
@@ -34,7 +34,7 @@
         <div class="right-header">
           <button id="login-button">Login</button>
           <button id="signup-button">Signup</button>
-          <button id="signout-button">SignOut</button>
+          <button id="logout-button">logOut</button>
           <div class="profile-pic">
             <img
               src="../Images/ProfilePic.png"
@@ -49,6 +49,7 @@
     <!-- -------------Display Area-------------- -->
     <main>
       <div class="display-section">
+        <div class=" loggedout-display">Login to Use</div>
         <div class="forest-land-container">
           <div class="forest-land">
             <div class="tree">
@@ -82,18 +83,34 @@
     </main>
 
     <!-- ------------SignUp Moodle ---------------- -->
-    <div class="signup-outer-container" id="signup-outer-container">
+    <div class="signup-outer-container hide" id="signup-outer-container">
       <div class="signup-container">
         <button id="signup-cross">X</button>
         <form class="signup">
           <label for="email">Email: </label><br>
-          <input type="text" name="email" required />
+          <input type="email" name="email" required />
 
           <br /><br />
           <label for="password">Password: </label><br>
-          <input type="text" name="password" required />
+          <input type="password" name="password" required />
           <br /><br />
           <button id="signup-done">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <!-- ------------LogIn Moodle ---------------- -->
+    <div class="login-outer-container hide" id="login-outer-container">
+      <div class="login-container">
+        <button id="login-cross">X</button>
+        <form class="login">
+          <label for="email">Email: </label><br>
+          <input type="email" name="email" required />
+
+          <br /><br />
+          <label for="password">Password: </label><br>
+          <input type="password" name="password" required />
+          <br /><br />
+          <button id="login-done">Log In</button>
         </form>
       </div>
     </div>
